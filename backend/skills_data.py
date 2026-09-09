@@ -1,0 +1,51 @@
+# The "canonical" name for each skill — what actually gets stored/shown
+KNOWN_SKILLS = [
+    "Python", "Java", "C++", "C", "JavaScript", "TypeScript", "React", "Angular", "Vue.js",
+    "Node.js", "Express.js", "FastAPI", "Django", "Flask", "Spring Boot", "HTML", "CSS",
+    "Tailwind CSS", "Bootstrap", "SQL", "PostgreSQL", "MySQL", "MongoDB", "SQLite", "Firebase",
+    "Git", "GitHub", "GitLab", "Docker", "Kubernetes", "AWS", "Azure", "Google Cloud",
+    "Machine Learning", "Deep Learning", "Natural Language Processing", "Computer Vision",
+    "TensorFlow", "PyTorch", "Keras", "Scikit-learn", "Pandas", "NumPy", "Matplotlib",
+    "Data Structures", "Algorithms", "REST API", "GraphQL", "Redux", "Next.js",
+    "Linux", "Bash", "Shell Scripting", "CI/CD", "Jenkins", "Agile", "Scrum", "Figma",
+    "Photoshop", "R", "MATLAB", "Excel", "Power BI", "Tableau", "Hadoop", "Spark",
+    "Cybersecurity", "Networking", "DevOps", "Microservices", "Unit Testing", "Selenium",
+    "Android Development", "iOS Development", "Flutter", "React Native", "Kotlin", "Swift",
+    "PHP", "Laravel", "Ruby", "Ruby on Rails", "Go", "Rust", "Data Analysis",
+    "Data Visualization", "Statistics", "Communication", "Leadership", "Problem Solving",
+    "Time Management", "Teamwork"
+]
+
+# Alternate ways people write a skill -> maps to the canonical name above
+# Keys and values are lowercase for consistent matching
+SKILL_ALIASES = {
+    "ml": "Machine Learning",
+    "dl": "Deep Learning",
+    "nlp": "Natural Language Processing",
+    "cv": "Computer Vision",
+    "js": "JavaScript",
+    "ts": "TypeScript",
+    "reactjs": "React",
+    "react.js": "React",
+    "nodejs": "Node.js",
+    "node": "Node.js",
+    "expressjs": "Express.js",
+    "vuejs": "Vue.js",
+    "postgres": "PostgreSQL",
+    "mongo": "MongoDB",
+    "oop": "Object-Oriented Programming",
+    "dsa": "Data Structures",
+    "ci/cd": "CI/CD",
+    "gcp": "Google Cloud",
+    "k8s": "Kubernetes",
+    "tf": "TensorFlow",
+    "sklearn": "Scikit-learn",
+    "restful api": "REST API",
+    "rest apis": "REST API",
+    "power bi": "Power BI",
+    "html5": "HTML",
+    "css3": "CSS",
+    "c sharp": "C#",
+    "c#": "C#",
+    "golang": "Go",
+}
