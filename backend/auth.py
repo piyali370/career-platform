@@ -2,8 +2,12 @@ from passlib.context import CryptContext
 from jose import jwt
 from datetime import datetime, timedelta
 
-# Secret key used to sign JWT tokens - in production this comes from .env, keep simple for now
-SECRET_KEY = "career-platform-secret-key-change-this-later"
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+SECRET_KEY = os.getenv("SECRET_KEY")
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 60 * 24  # token valid for 24 hours
 

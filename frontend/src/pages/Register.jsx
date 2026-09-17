@@ -3,6 +3,8 @@ import axios from 'axios'
 import { Link, useNavigate } from 'react-router-dom'
 import { RetroGrid } from '../components/RetroGrid'
 
+const API = import.meta.env.VITE_API_URL
+
 function Register() {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
@@ -18,7 +20,7 @@ function Register() {
     setLoading(true)
 
     try {
-      await axios.post('http://127.0.0.1:8000/register', { name, email, password, role })
+      await axios.post(`${API}/register`, { name, email, password, role })
       navigate('/verify-email', { state: { email } })
     } catch (err) {
       setError(err.response?.data?.detail || 'Registration failed. Please try again.')
