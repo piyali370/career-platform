@@ -69,7 +69,7 @@ function Login() {
   const GITHUB_CLIENT_ID = 'Ov23liuleu9RcfuSWuUG'
 
       const handleGitHubClick = () => {
-    const redirectUri = 'http://localhost:5173/auth/github/callback'
+    const redirectUri = `${window.location.origin}/auth/github/callback`
     const githubAuthUrl = `https://github.com/login/oauth/authorize?client_id=${GITHUB_CLIENT_ID}&redirect_uri=${redirectUri}&scope=user:email`
     window.location.href = githubAuthUrl
   }
